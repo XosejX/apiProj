@@ -1,0 +1,18 @@
+<div class="main">
+    <router-outlet></router-outlet>
+    <hr/>
+    <div *ngIf="!serv.objJsonDirector" class="loader"></div>
+    <div *ngIf="serv.objJsonDirector">
+        <div *ngFor="let val of serv.objJsonDirector">
+            <div class='col-sm-6 col-md-6'>
+                <div class='thumbnail'>
+                    <img style='height: 200px;' [src]='val.poster' alt='IMG NOT AVAILABLE' onerror="this.onerror=null;this.src='NA.jpeg';"/>
+                    <p class="title">{{val.show_title}}</p>
+                    <hr/>
+                    <a class="title" (click)="serv.def(val)" [routerLink]="['/Director/Movie']">Show more in the top of this page</a>
+                    <hr/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

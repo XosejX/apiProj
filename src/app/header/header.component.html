@@ -1,0 +1,46 @@
+<nav *ngIf="!theme" class="theme navMain navbar navbar-inverse">
+    <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li routerLinkActive="active"><a [routerLink]="['/Main']">Main</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/Actor']">Actor</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/Director']">Director</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li (click)="changeTheme()"><a><span class="glyphicon glyphicon-adjust"></span></a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav *ngIf="theme" class="themeInverted navMain navbar navbar-inverse">
+    <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li routerLinkActive="active"><a [routerLink]="['/Main']">Main</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/Actor']">Actor</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/Director']">Director</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li (click)="changeTheme()"><a><span class="glyphicon glyphicon-adjust"></span></a></li>
+        </ul>
+    </div>
+</nav>
+<breadcrumb></breadcrumb>

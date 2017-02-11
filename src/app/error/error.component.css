@@ -1,0 +1,9 @@
+* {
+    text-align: center;
+}
+
+div {
+    border: 2px grey dotted;
+    margin:0;
+    padding: 50px;
+}

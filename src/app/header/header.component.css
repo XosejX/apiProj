@@ -1,0 +1,25 @@
+ul.breadcrumb{
+    background-color: red;
+}
+
+.navMain, .navBar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.active a,
+.active a:focus,
+.active a:hover{
+    background-color: inherit;
+    color: red;
+}
+
+.navbar-right{
+    padding-right: 20px;
+}

@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: pix;
+    src: url(font/pixel.ttf);
+}
+
+* {
+    font-family: pix;
+    font-weight: bold;
+}
+
+.title{
+    text-align: center;
+    padding: 5px 0 0 0;
+}
+
+.main {
+    padding-bottom: 100px;
+}
+
+.theme{
+    background-color: #2E4053;
+    border: solid 3px #7D6608;
+    margin: 0;
+}
+
+.themeInverted{
+    background-color: black;
+    border: solid 3px red;
+    margin: 0;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #283747;
+    border-right: 16px solid #1E8449;
+    border-bottom: 16px solid #C0392B;
+    border-left: 16px solid #979A9A;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
